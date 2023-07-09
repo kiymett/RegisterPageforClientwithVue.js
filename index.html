@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico">   -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Anmeldeformulare für Kunden</title>
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app">
+    <div class="container">
+      <header>
+        <div class="col-sm-4 col-sm-pull-0 col-lg-4 col-lg-pull-6  col-xl-4 hidden-xs  header-logo">
+          <div class="logo">
+            <a href="https://www.jalousiescout.de">
+              <img class="header-logo" src="../src/assets/jalousiescout_logo.png" widht="289" height="39" alt="logo">
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div #register>
+            <form action="https://www.jalousiescout.de/customer/login.html?form=register" id="form1s">
+              <fieldset>
+                <div class=col-xs-12>
+                  <h2>Ich bin ein neuer Kunde</h2>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class=col-xs-12>
+                  <div class="personality">
+                    <h3>Ihre persönlichen Daten</h3>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label for="gender">Anrede*</label>
+                    <select name="client-gender-select" class="input-form select-arrow" id="customer-gender">
+                      <option value="f">Frau</option>
+                      <option value="m">Herr</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-12 col-sm-6 mobile">
+                    <label for="vname">Vorname*
+                    </label>
+                    <input type="text" id="vname" name="vname" class="input-form">
+                    <template><em>Mindestens drei Zeichen</em></template>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label for="nname">Nachname*</label>
+                    <input type="text" id="vname" name="vname" class="input-form">
+                    <template><em>Bitte geben Sie Ihren Nachnamen an</em></template>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-12 col-sm-6 mobile">
+                    <label for="email">E-mail Adresse*</label>
+                    <input type="email" v-model="email" id="email" name="email" class="input-form">
+                    <template><em>Bitte geben Sie Ihre E-Mail an</em></template>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label for="user">Benutzer Name*</label>
+                    <input type="text" v-model="user" id="user" name="user" class="input-form">
+                    <template> <em>Bitte geben Sie Ihren Benutzernamen an</em></template>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class=col-xs-12>
+                  <div class="personality">
+                    <h3>Ihr Passwort</h3>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-12 col-sm-6 mobile">
+                    <label for="pass">Passwort*</label>
+                    <input type="password" v-model="password" id="pass" name="pass" class="input-form">
+                    <template> <em>Bitte wählen Sie ein Passwort</em></template>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label for="passrepeat">Passwort wiederholen*</label>
+                    <input type="passwordRepeat" v-model="Passwordrepeat" id="passrepeat" name="passrepeat"
+                      class="input-form">
+                    <template> <em>Bitte bestätigen Sie Ihr Passwort</em></template>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class=col-xs-12>
+                  <div class="personality">
+                    <h3>Ihre Adresse</h3>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-xs-12 col-sm-6 mobile">
+                    <label for="street">Straße*</label>
+                    <input type="streeet" v-model="street" id="street" name="street" class="input-form">
+                    <template> <em>Bitte geben Sie Ihre Straße an</em></template>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label for="zip">PLZ*</label>
+                    <input type="zip" v-model="zip" id="zip" name="zip" class="input-form">
+                    <template> <em>Bitte geben Sie Ihr Postleitzahl an</em></template>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="agb">
+                  <div id="checkboxlabel" class="checkbox">
+                    <input type="checkbox" v-model="checkbox" id="agbCheckbox" name="agb" value="agb">
+                    <label class="agb-checkbox" for="checkbox">Geschäftsbedingungen einverstanden</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="col-sm-6">
+                  <button class="buton btn_green stay_left" v-on:click="getData()" name="submit_register" value="Submit"
+                    form="form1" type="submit">Kundenkonto erstellen</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+    </div>
+    <footer>
+      <div class="footer_space">
+        <p> &copy; Copyright 2022 Schoenberger Germany Enterprises GmbH & Co. KG. Alle Rechte vorbehalten. <br>
+        </p>
+      </div>
+    </footer>
+    </main>
+  </div>
+  <template>
+
+  </template>
+  <!-- built files will be auto injected -->
+  <script src="main.js"></script>
+</body>
+
+</html>
