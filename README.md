@@ -1,1 +1,87 @@
-# RegisterPageforClientwithVue.js
+# Vue Challenge
+
+Danke für deine Bewerbung als Frontend Entwickler/in und für dein Interesse an der Schoenberger Group! Mit dieser Challenge möchten wir deine Skills in folgenden Bereichen abfragen:
+
+- Deine allgemeinen HTML, CSS und Javascript Kenntnisse
+- Dein Sinn für UX und benutzerfreundliches Design
+- Deine Problemlösefähigkeit, logisches Denken und Lernbereitschaft für neuen Technologien
+
+## Installation und Setup der Vue Entwicklungsumgebung
+
+- Node.js installieren -> [Download Page](https://nodejs.org/en/)
+- Lade dir die Node.js Version mit der Bezeichnung "Recommended For Most Users" runter und installiere sie.
+
+Für die nächsten Schritte wirst du ein Terminal brauchen (WINDOWS TASTE + R -> "powershell" eingeben + ENTER)
+
+
+1.Node Installation testen (Eingabe + ENTER)
+```bash
+node -v
+```
+2.Du solltest eine Ausgabe wie folgt bekommen (Versionsnummer kann bei dir eine andere sein)
+```bash
+v16.16.0
+```
+3.vue-cli installieren (Eingabe + ENTER)
+```bash
+npm install -g @vue/cli
+```
+4.Teste deine Vue Installation mit dem Befehl  (Eingabe + ENTER)
+```bash
+vue --version
+```
+5.Du solltest eine Ausgabe wie folgt bekommen (Versionsnummer kann bei dir eine andere sein)
+```bash
+@vue/cli 4.5.12
+```
+6.Gehe mit dem Terminal zum Pfad, wo du die vue-challenge.zip entpackt hast (Pfad entsprechend anpassen)
+```bash
+cd /path/to/vue-challenge
+```
+6.Mit dem npm package-manager alle dependencies installieren (es werden mehrere Dateien heruntergeladen)
+```bash
+npm install
+```
+7.Wenn dein Terminal im richtigen Verzeichnis ist, kannst du die Entwicklungsumgebung starten
+```bash
+npm run serve
+```
+
+Fertig! Öffne die URL, die dir im Terminal Fenster vorgegeben wurde, im Browser, um die Vue Applikation zu sehen.
+## Deine Aufgabe:
+
+Du sollst mit dem Vue.js Framework das Frontend für ein Registrierungsformular im Jalousiescout-Style erstellen unter Einhaltung der folgenden Vorgaben.
+
+### Jalousiescout CI:
+
+- Color-Codes: (Weiß) #ffffff (JS Gelb) #fcbf00, (JS Lightgrey) #f3f3f3, (JS Darkgrey) #3b444d 
+- Font: sans-serif
+
+### Layout
+
+- Header (mit Jalousiescout Logo)
+- Footer (mit dem Text "© Copyright 2022 Schoenberger Germany Enterprises GmbH & Co. KG. Alle Rechte vorbehalten.")
+- Content Bereich mit dem Formular
+- Achte auf Responsive Design!
+
+### Formular Felder
+Bitte achte auch auf eine benutzerfreundliche Formularvalidierung!
+
+- Benutzername
+- Passwort
+- Passwort wiederholen
+- Email Adresse
+- Anrede 
+- Vorname
+- Nachname
+- Straße
+- PLZ
+- AGB (Checkbox)
+- Submit (Button)
+
+## Letzter Hinweis
+
+Es wird dein Ansatz bewertet und nicht nach einer "perfekten" Lösung gesucht. Nicht aufgeben! Lass Dich von unserem Shop [www.jalousiescout.de](https://www.jalousiescout.de) inspierieren.
+
+Das Schoenberger Dev Team wünscht Dir viel Erfolg und viel Spaß mit der Challenge!
+
