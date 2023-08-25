@@ -48,40 +48,11 @@ npm run serve
 ```
 
 Fertig! Öffne die URL, die dir im Terminal Fenster vorgegeben wurde, im Browser, um die Vue Applikation zu sehen.
-## Deine Aufgabe:
-
-Du sollst mit dem Vue.js Framework das Frontend für ein Registrierungsformular im Jalousiescout-Style erstellen unter Einhaltung der folgenden Vorgaben.
 
 ### Jalousiescout CI:
 
 - Color-Codes: (Weiß) #ffffff (JS Gelb) #fcbf00, (JS Lightgrey) #f3f3f3, (JS Darkgrey) #3b444d 
 - Font: sans-serif
 
-### Layout
 
-- Header (mit Jalousiescout Logo)
-- Footer (mit dem Text "© Copyright 2022 Schoenberger Germany Enterprises GmbH & Co. KG. Alle Rechte vorbehalten.")
-- Content Bereich mit dem Formular
-- Achte auf Responsive Design!
-
-### Formular Felder
-Bitte achte auch auf eine benutzerfreundliche Formularvalidierung!
-
-- Benutzername
-- Passwort
-- Passwort wiederholen
-- Email Adresse
-- Anrede 
-- Vorname
-- Nachname
-- Straße
-- PLZ
-- AGB (Checkbox)
-- Submit (Button)
-
-## Letzter Hinweis
-
-Es wird dein Ansatz bewertet und nicht nach einer "perfekten" Lösung gesucht. Nicht aufgeben! Lass Dich von unserem Shop [www.jalousiescout.de](https://www.jalousiescout.de) inspierieren.
-
-Das Schoenberger Dev Team wünscht Dir viel Erfolg und viel Spaß mit der Challenge!
 
