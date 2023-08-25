@@ -47,12 +47,3 @@ npm install
 npm run serve
 ```
 
-Fertig! Öffne die URL, die dir im Terminal Fenster vorgegeben wurde, im Browser, um die Vue Applikation zu sehen.
-
-### Jalousiescout CI:
-
-- Color-Codes: (Weiß) #ffffff (JS Gelb) #fcbf00, (JS Lightgrey) #f3f3f3, (JS Darkgrey) #3b444d 
-- Font: sans-serif
-
-
-
